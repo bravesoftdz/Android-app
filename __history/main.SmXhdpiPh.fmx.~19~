@@ -1,0 +1,20 @@
+inherited Form1_SmXhdpiPh: TForm1_SmXhdpiPh
+  ClientHeight = 375
+  ClientWidth = 250
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 250.000000000000000000
+    inherited Edit1: TEdit
+      Size.Width = 250.000000000000000000
+      inherited ClearEditButton1: TClearEditButton
+        Position.Y = 1.000000000000000000
+        Size.Height = 30.000000000000000000
+      end
+    end
+  end
+  inherited ListView1: TListView
+    Size.Width = 250.000000000000000000
+    Size.Height = 327.000000000000000000
+    OnMouseMove = ListView1MouseMove
+  end
+end

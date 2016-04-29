@@ -1,0 +1,74 @@
+inherited Form1_LgXhdpiTb: TForm1_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited TabControl1: TTabControl
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+    Sizes = (
+      480s
+      829s
+      480s
+      829s)
+    inherited Settings: TTabItem
+      ExplicitSize.cx = 240.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited TabControl2: TTabControl
+        Size.Width = 480.000000000000000000
+        Size.Height = 829.000000000000000000
+        Sizes = (
+          480s
+          780s
+          480s
+          780s
+          480s
+          780s)
+        inherited TabItem1: TTabItem
+          Size.Width = 160.000000000000000000
+          ExplicitSize.cx = 200.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          inherited ToolBar1: TToolBar
+            Size.Width = 480.000000000000000000
+            inherited Edit1: TEdit
+              Size.Width = 480.000000000000000000
+            end
+          end
+          inherited ListView1: TListView
+            Size.Width = 480.000000000000000000
+            Size.Height = 732.000000000000000000
+          end
+        end
+        inherited TabItem2: TTabItem
+          Size.Width = 160.000000000000000000
+          ExplicitSize.cx = 100.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+        end
+        inherited TabItem3: TTabItem
+          Size.Width = 160.000000000000000000
+          ExplicitSize.cx = 68.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+        end
+      end
+    end
+    inherited Weather: TTabItem
+      ExplicitSize.cx = 240.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+  end
+  inherited RESTRequest1: TRESTRequest
+    AutoCreateParams = False
+    Params = <
+      item
+        name = 'searchby'
+        Value = 'cities'
+      end
+      item
+        name = 'fchar'
+        Value = 'v'
+      end
+      item
+        name = 'mcntcities'
+        Value = '30'
+      end>
+  end
+end

@@ -1,0 +1,109 @@
+inherited Form1_LgXhdpiTb: TForm1_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited TabControl1: TTabControl
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+    Sizes = (
+      480s
+      829s
+      480s
+      829s)
+    inherited Settings: TTabItem
+      ExplicitSize.cx = 240.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited TabControl2: TTabControl
+        Size.Width = 480.000000000000000000
+        Size.Height = 829.000000000000000000
+        Sizes = (
+          480s
+          780s
+          480s
+          780s)
+        inherited TabItem1: TTabItem
+          Size.Width = 240.000000000000000000
+          ExplicitSize.cx = 200.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          inherited ToolBar1: TToolBar
+            Size.Width = 480.000000000000000000
+            inherited Label3: TLabel
+              Size.Width = 480.000000000000000000
+            end
+          end
+          inherited ListView1: TListView
+            Enabled = False
+            Size.Width = 480.000000000000000000
+            Size.Height = 683.000000000000000000
+          end
+          inherited ListBox1: TListBox
+            Size.Width = 480.000000000000000000
+            Viewport.Width = 480.000000000000000000
+            Viewport.Height = 49.000000000000000000
+            inherited ListBoxItem1: TListBoxItem
+              inherited Edit1: TEdit
+                Size.Width = 480.000000000000000000
+              end
+            end
+          end
+        end
+        inherited NearBy: TTabItem
+          Enabled = False
+          Size.Width = 240.000000000000000000
+          ExplicitSize.cx = 100.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          inherited ToolBar3: TToolBar
+            Size.Width = 480.000000000000000000
+            inherited Label2: TLabel
+              Size.Width = 480.000000000000000000
+            end
+          end
+          inherited ListView2: TListView
+            Size.Width = 480.000000000000000000
+            Size.Height = 732.000000000000000000
+          end
+        end
+      end
+    end
+    inherited Weather: TTabItem
+      ExplicitSize.cx = 240.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited WebBrowser1: TWebBrowser
+        Size.Width = 480.000000000000000000
+        Size.Height = 781.000000000000000000
+      end
+      inherited ToolBar2: TToolBar
+        Size.Width = 480.000000000000000000
+        inherited Label1: TLabel
+          Size.Width = 480.000000000000000000
+        end
+      end
+    end
+  end
+  inherited onLocationChanged: TTimer [2]
+  end
+  inherited RESTRequest1: TRESTRequest [3]
+    AutoCreateParams = False
+    Params = <
+      item
+        name = 'searchby'
+        Value = 'cities'
+      end
+      item
+        name = 'fchar'
+        Value = 'v'
+      end
+      item
+        name = 'mcntcities'
+        Value = '30'
+      end>
+  end
+  inherited RESTClient1: TRESTClient [4]
+  end
+  inherited RESTResponse1: TRESTResponse [5]
+  end
+  inherited ActionList1: TActionList [6]
+  end
+  inherited LocationSensor1: TLocationSensor [7]
+  end
+end

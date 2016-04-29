@@ -1,0 +1,37 @@
+inherited Form1_LgXhdpiTb: TForm1_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 480.000000000000000000
+    inherited Edit1: TEdit
+      Size.Width = 480.000000000000000000
+      inherited ClearEditButton1: TClearEditButton
+        Position.Y = 1.000000000000000000
+        Size.Height = 30.000000000000000000
+      end
+    end
+  end
+  inherited ListView1: TListView
+    Size.Width = 480.000000000000000000
+    Size.Height = 781.000000000000000000
+    StyleLookup = 'listviewstyle'
+    AutoTapScroll = True
+  end
+  inherited RESTRequest1: TRESTRequest
+    AutoCreateParams = False
+    Params = <
+      item
+        name = 'searchby'
+        Value = 'cities'
+      end
+      item
+        name = 'fchar'
+        Value = 'v'
+      end
+      item
+        name = 'mcntcities'
+        Value = '30'
+      end>
+  end
+end

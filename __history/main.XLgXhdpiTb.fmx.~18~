@@ -1,0 +1,78 @@
+inherited Form1_XLgXhdpiTb: TForm1_XLgXhdpiTb
+  ClientHeight = 1255
+  ClientWidth = 800
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    Size.Width = 800.000000000000000000
+    Size.Height = 1255.000000000000000000
+    Sizes = (
+      800s
+      1255s
+      800s
+      1255s)
+    inherited Settings: TTabItem
+      ExplicitSize.cx = 800.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited TabControl2: TTabControl
+        Size.Width = 800.000000000000000000
+        Size.Height = 1255.000000000000000000
+        Sizes = (
+          800s
+          1206s
+          800s
+          1206s
+          800s
+          1206s)
+        inherited TabItem1: TTabItem
+          Size.Width = 266.000000000000000000
+          ExplicitSize.cx = 200.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          inherited ToolBar1: TToolBar
+            Size.Width = 800.000000000000000000
+            inherited Edit1: TEdit
+              Size.Width = 800.000000000000000000
+            end
+          end
+          inherited ListView1: TListView
+            Size.Width = 800.000000000000000000
+            Size.Height = 1158.000000000000000000
+          end
+        end
+        inherited TabItem2: TTabItem
+          Size.Width = 266.000000000000000000
+          ExplicitSize.cx = 100.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          inherited ToolBar3: TToolBar
+            Size.Width = 800.000000000000000000
+            inherited Label2: TLabel
+              Size.Width = 800.000000000000000000
+            end
+          end
+          inherited ListView2: TListView
+            Size.Width = 800.000000000000000000
+            Size.Height = 1158.000000000000000000
+          end
+        end
+        inherited TabItem3: TTabItem
+          Size.Width = 268.000000000000000000
+          ExplicitSize.cx = 68.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+        end
+      end
+    end
+    inherited Weather: TTabItem
+      ExplicitSize.cx = 400.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited WebBrowser1: TWebBrowser
+        Size.Width = 800.000000000000000000
+        Size.Height = 1207.000000000000000000
+      end
+      inherited ToolBar2: TToolBar
+        Size.Width = 800.000000000000000000
+        inherited Label1: TLabel
+          Size.Width = 800.000000000000000000
+        end
+      end
+    end
+  end
+end

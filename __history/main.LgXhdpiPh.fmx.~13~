@@ -1,0 +1,19 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+    inherited Edit1: TEdit
+      Size.Width = 450.000000000000000000
+      inherited ClearEditButton1: TClearEditButton
+        Position.Y = 1.000000000000000000
+        Size.Height = 30.000000000000000000
+      end
+    end
+  end
+  inherited ListView1: TListView
+    Size.Width = 450.000000000000000000
+    Size.Height = 647.000000000000000000
+  end
+end
