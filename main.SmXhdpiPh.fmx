@@ -1,7 +1,7 @@
 inherited Form1_SmXhdpiPh: TForm1_SmXhdpiPh
   ClientHeight = 375
   ClientWidth = 250
-  DesignerMasterStyle = 0
+  DesignerMasterStyle = 3
   inherited TabControl1: TTabControl
     Size.Width = 250.000000000000000000
     Size.Height = 375.000000000000000000
@@ -10,9 +10,9 @@ inherited Form1_SmXhdpiPh: TForm1_SmXhdpiPh
       375s
       250s
       375s)
-    inherited Settings: TTabItem
-      ExplicitSize.cx = 250.000000000000000000
-      ExplicitSize.cy = 49.000000000000000000
+    inherited TabItem1: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
       inherited TabControl2: TTabControl
         Size.Width = 250.000000000000000000
         Size.Height = 375.000000000000000000
@@ -21,38 +21,29 @@ inherited Form1_SmXhdpiPh: TForm1_SmXhdpiPh
           326s
           250s
           326s)
-        inherited TabItem1: TTabItem
+        inherited TabItem3: TTabItem
           Size.Width = 125.000000000000000000
-          ExplicitSize.cx = 200.000000000000000000
+          ExplicitSize.cx = 320.000000000000000000
           ExplicitSize.cy = 49.000000000000000000
           inherited ToolBar1: TToolBar
             Size.Width = 250.000000000000000000
-            inherited Label3: TLabel
+            inherited Label1: TLabel
               Size.Width = 250.000000000000000000
             end
           end
-          inherited ListView1: TListView
-            Enabled = False
+          inherited Edit1: TEdit
             Size.Width = 250.000000000000000000
-            Size.Height = 229.000000000000000000
           end
-          inherited ListBox1: TListBox
+          inherited ListView1: TListView
             Size.Width = 250.000000000000000000
-            Viewport.Width = 250.000000000000000000
-            Viewport.Height = 49.000000000000000000
-            inherited ListBoxItem1: TListBoxItem
-              inherited Edit1: TEdit
-                Size.Width = 250.000000000000000000
-              end
-            end
+            Size.Height = 246.000000000000000000
           end
         end
-        inherited NearBy: TTabItem
-          Enabled = False
+        inherited TabItem4: TTabItem
           Size.Width = 125.000000000000000000
-          ExplicitSize.cx = 100.000000000000000000
+          ExplicitSize.cx = 320.000000000000000000
           ExplicitSize.cy = 49.000000000000000000
-          inherited ToolBar3: TToolBar
+          inherited ToolBar2: TToolBar
             Size.Width = 250.000000000000000000
             inherited Label2: TLabel
               Size.Width = 250.000000000000000000
@@ -65,31 +56,31 @@ inherited Form1_SmXhdpiPh: TForm1_SmXhdpiPh
         end
       end
     end
-    inherited Weather: TTabItem
-      ExplicitSize.cx = 125.000000000000000000
-      ExplicitSize.cy = 49.000000000000000000
+    inherited TabItem2: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited ToolBar3: TToolBar
+        Size.Width = 250.000000000000000000
+        inherited Label3: TLabel
+          Size.Width = 250.000000000000000000
+        end
+      end
       inherited WebBrowser1: TWebBrowser
         Size.Width = 250.000000000000000000
         Size.Height = 327.000000000000000000
       end
-      inherited ToolBar2: TToolBar
-        Size.Width = 250.000000000000000000
-        inherited Label1: TLabel
-          Size.Width = 250.000000000000000000
-        end
-      end
     end
   end
-  inherited onLocationChanged: TTimer [2]
-  end
-  inherited RESTRequest1: TRESTRequest [3]
+  inherited Timer3: TTimer [3]
   end
   inherited RESTClient1: TRESTClient [4]
   end
-  inherited RESTResponse1: TRESTResponse [5]
+  inherited RESTRequest1: TRESTRequest [5]
   end
-  inherited ActionList1: TActionList [6]
+  inherited RESTResponse1: TRESTResponse [6]
   end
   inherited LocationSensor1: TLocationSensor [7]
+  end
+  inherited ActionList1: TActionList [8]
   end
 end

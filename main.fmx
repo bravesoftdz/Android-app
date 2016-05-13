@@ -2,36 +2,28 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 504
-  ClientWidth = 628
-  StyleLookup = 'toolbarstyle'
+  ClientHeight = 480
+  ClientWidth = 640
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  OnCreate = FormCreate
   DesignerMasterStyle = 3
-  object onChangeEditTextTimer: TTimer
-    Interval = 200
-    OnTimer = onChangeEditTextTimerTimer
-    Left = 528
-    Top = 192
-  end
   object TabControl1: TTabControl
-    Align = Contents
-    Size.Width = 628.000000000000000000
-    Size.Height = 504.000000000000000000
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
     StyleLookup = 'tabcontrolstyle'
     TabHeight = 49.000000000000000000
     TabIndex = 0
-    TabOrder = 38
+    TabOrder = 0
     TabPosition = None
     Sizes = (
-      628s
-      504s
-      628s
-      504s)
-    object Settings: TTabItem
+      640s
+      480s
+      640s
+      480s)
+    object TabItem1: TTabItem
       CustomIcon = <
         item
         end>
@@ -39,53 +31,64 @@ object Form1: TForm1
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
-      StyleLookup = ''
+      StyleLookup = 'tabitemstyle'
       TabOrder = 0
-      Text = 'Settings'
+      Text = 'TabItem1'
       ExplicitSize.cx = 8.000000000000000000
       ExplicitSize.cy = 8.000000000000000000
       object TabControl2: TTabControl
         Align = Client
-        Size.Width = 628.000000000000000000
-        Size.Height = 504.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 480.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'tabcontrolstyle'
         TabHeight = 49.000000000000000000
         TabIndex = 1
         TabOrder = 0
         TabPosition = Bottom
         Sizes = (
-          628s
-          455s
-          628s
-          455s)
-        object TabItem1: TTabItem
+          640s
+          431s
+          640s
+          431s)
+        object TabItem3: TTabItem
           CustomIcon = <
             item
             end>
           IsSelected = False
-          Size.Width = 314.000000000000000000
+          Size.Width = 320.000000000000000000
           Size.Height = 49.000000000000000000
           Size.PlatformDefault = False
-          StyleLookup = 'tabitemstyle'
+          StyleLookup = ''
           TabOrder = 0
           Text = #1055#1086#1080#1089#1082
-          ExplicitSize.cx = 228.000000000000000000
+          ExplicitSize.cx = 320.000000000000000000
           ExplicitSize.cy = 49.000000000000000000
           object ToolBar1: TToolBar
-            Size.Width = 628.000000000000000000
+            Size.Width = 640.000000000000000000
             Size.Height = 48.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
-            object Label3: TLabel
+            object Label1: TLabel
               Align = Client
-              Size.Width = 628.000000000000000000
+              Size.Width = 640.000000000000000000
               Size.Height = 48.000000000000000000
               Size.PlatformDefault = False
               StyleLookup = 'toollabel'
               TextSettings.HorzAlign = Center
-              Text = #1055#1086#1080#1089#1082' '#1087#1086#1075#1086#1076#1099
+              Text = #1055#1086#1080#1089#1082' '#1087#1091#1085#1082#1090#1086#1074
             end
+          end
+          object Edit1: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            StyleLookup = 'searchedit'
+            TabOrder = 1
+            Text = #1057#1090#1088#1072#1085#1072', '#1075#1086#1088#1086#1076', '#1086#1073#1083#1072#1089#1090#1100
+            Position.Y = 48.000000000000000000
+            Size.Width = 640.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnClick = Edit1Click
           end
           object ListView1: TListView
             ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
@@ -93,84 +96,43 @@ object Form1: TForm1
             HeaderAppearanceClassName = 'TListHeaderObjects'
             FooterAppearanceClassName = 'TListHeaderObjects'
             Align = Client
-            Size.Width = 628.000000000000000000
-            Size.Height = 358.000000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 1
-            ItemAppearance.ItemHeight = 60
-            ItemAppearance.ItemEditHeight = 60
-            ItemAppearanceObjects.ItemObjects.Image.Visible = False
-            OnItemClick = ListView1ItemClick
-          end
-          object ListBox1: TListBox
-            Align = Top
-            Position.Y = 48.000000000000000000
-            Size.Width = 628.000000000000000000
-            Size.Height = 49.000000000000000000
+            Size.Width = 640.000000000000000000
+            Size.Height = 351.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 2
-            DisableFocusEffect = True
-            DefaultItemStyles.ItemStyle = ''
-            DefaultItemStyles.GroupHeaderStyle = ''
-            DefaultItemStyles.GroupFooterStyle = ''
-            Viewport.Width = 628.000000000000000000
-            Viewport.Height = 49.000000000000000000
-            object ListBoxItem1: TListBoxItem
-              TabOrder = 0
-              object Edit1: TEdit
-                Touch.InteractiveGestures = [LongTap, DoubleTap]
-                Align = Top
-                StyleLookup = 'searcheditbox'
-                TabOrder = 0
-                Size.Width = 628.000000000000000000
-                Size.Height = 48.000000000000000000
-                Size.PlatformDefault = False
-                OnClick = Edit1Click
-                object ClearEditButton1: TClearEditButton
-                  CanFocus = False
-                  Cursor = crArrow
-                  Position.Y = 1.000000000000000000
-                  Size.Width = 32.000000000000000000
-                  Size.Height = 30.000000000000000000
-                  Size.PlatformDefault = False
-                  TabOrder = 0
-                end
-              end
-            end
-          end
-          object AniIndicator3: TAniIndicator
-            Align = Center
-            Enabled = True
-            Visible = False
+            ItemAppearance.ItemHeight = 64
+            ItemAppearance.ItemEditHeight = 64
+            ItemAppearanceObjects.ItemObjects.Image.Visible = False
+            StyleLookup = 'listviewstyle'
+            OnItemClick = ListView1ItemClick
           end
         end
-        object NearBy: TTabItem
+        object TabItem4: TTabItem
           CustomIcon = <
             item
             end>
           IsSelected = True
-          Size.Width = 314.000000000000000000
+          Size.Width = 320.000000000000000000
           Size.Height = 49.000000000000000000
           Size.PlatformDefault = False
           StyleLookup = ''
           TabOrder = 0
           Text = #1041#1083#1080#1078#1072#1081#1096#1080#1077
-          OnClick = NearByClick
-          ExplicitSize.cx = 228.000000000000000000
+          ExplicitSize.cx = 320.000000000000000000
           ExplicitSize.cy = 49.000000000000000000
-          object ToolBar3: TToolBar
-            Size.Width = 628.000000000000000000
+          object ToolBar2: TToolBar
+            Size.Width = 640.000000000000000000
             Size.Height = 48.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
             object Label2: TLabel
-              Align = Contents
-              Size.Width = 628.000000000000000000
+              Align = Client
+              Size.Width = 640.000000000000000000
               Size.Height = 48.000000000000000000
               Size.PlatformDefault = False
               StyleLookup = 'toollabel'
               TextSettings.HorzAlign = Center
-              Text = #1041#1083#1080#1078#1072#1081#1096#1080#1077
+              Text = #1041#1083#1080#1078#1072#1081#1096#1080#1077' '#1087#1091#1085#1082#1090#1099
             end
           end
           object ListView2: TListView
@@ -179,23 +141,20 @@ object Form1: TForm1
             HeaderAppearanceClassName = 'TListHeaderObjects'
             FooterAppearanceClassName = 'TListHeaderObjects'
             Align = Client
-            Size.Width = 628.000000000000000000
-            Size.Height = 407.000000000000000000
+            Size.Width = 640.000000000000000000
+            Size.Height = 383.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 1
-            ItemAppearance.ItemHeight = 60
-            ItemAppearance.ItemEditHeight = 60
+            ItemAppearance.ItemHeight = 64
+            ItemAppearance.ItemEditHeight = 64
             ItemAppearanceObjects.ItemObjects.Image.Visible = False
+            StyleLookup = 'listviewstyle'
             OnItemClick = ListView2ItemClick
-          end
-          object AniIndicator2: TAniIndicator
-            Align = Center
-            Enabled = True
           end
         end
       end
     end
-    object Weather: TTabItem
+    object TabItem2: TTabItem
       CustomIcon = <
         item
         end>
@@ -203,49 +162,64 @@ object Form1: TForm1
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
-      StyleLookup = 'tabitemcustom'
+      StyleLookup = ''
       TabOrder = 0
-      Text = 'Weather'
+      Text = 'TabItem2'
       ExplicitSize.cx = 8.000000000000000000
       ExplicitSize.cy = 8.000000000000000000
-      object WebBrowser1: TWebBrowser
-        Align = Client
-        Size.Width = 686.000000000000000000
-        Size.Height = 456.000000000000000000
-        Size.PlatformDefault = False
-        Visible = False
-        OnDidFinishLoad = WebBrowser1DidFinishLoad
-      end
-      object ToolBar2: TToolBar
-        Size.Width = 628.000000000000000000
+      object ToolBar3: TToolBar
+        Size.Width = 640.000000000000000000
         Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        object Label1: TLabel
+        object Label3: TLabel
           Align = Contents
-          Size.Width = 628.000000000000000000
+          Size.Width = 640.000000000000000000
           Size.Height = 48.000000000000000000
           Size.PlatformDefault = False
           StyleLookup = 'toollabel'
           TextSettings.HorzAlign = Center
-          Text = #1055#1086#1075#1086#1076#1072
+          Text = #1055#1088#1086#1075#1085#1086#1079' '#1087#1086#1075#1086#1076#1099
         end
         object SpeedButton1: TSpeedButton
-          Align = Left
+          Align = FitLeft
           Size.Width = 48.000000000000000000
           Size.Height = 48.000000000000000000
           Size.PlatformDefault = False
           StyleLookup = 'backtoolbutton'
-          Text = 'SpeedButton1'
+          Text = 'Go to TabItem1'
           OnClick = SpeedButton1Click
         end
       end
-      object AniIndicator1: TAniIndicator
-        Align = Center
-        Enabled = True
-        Style = Circular
+      object WebBrowser1: TWebBrowser
+        Align = Client
+        Size.Width = 640.000000000000000000
+        Size.Height = 432.000000000000000000
+        Size.PlatformDefault = False
       end
     end
+  end
+  object Timer1: TTimer
+    Interval = 50
+    OnTimer = Timer1Timer
+    Left = 560
+    Top = 312
+  end
+  object Timer2: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = Timer2Timer
+    Left = 560
+    Top = 376
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    BaseURL = 'http://beta.meteonova.ru/proxy.php'
+    Params = <>
+    HandleRedirects = True
+    Left = 560
+    Top = 112
   end
   object RESTRequest1: TRESTRequest
     Client = RESTClient1
@@ -253,57 +227,39 @@ object Form1: TForm1
       item
         name = 'searchby'
         Value = 'cities'
-      end
-      item
-        name = 'fchar'
-        Value = 'v'
       end>
-    Resource = 'proxy.php'
     Response = RESTResponse1
     SynchronizedEvents = False
-    Left = 528
-    Top = 248
-  end
-  object RESTClient1: TRESTClient
-    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
-    AcceptCharset = 'UTF-8, *;q=0.8'
-    BaseURL = 'http://beta.meteonova.ru'
-    Params = <>
-    HandleRedirects = True
-    Left = 528
-    Top = 344
+    Left = 560
+    Top = 176
   end
   object RESTResponse1: TRESTResponse
-    ContentType = 'application/json'
-    Left = 528
-    Top = 296
-  end
-  object ActionList1: TActionList
-    Left = 528
-    Top = 392
-    object gotoWeather: TChangeTabAction
-      Category = 'Tab'
-      Tab = Weather
-    end
-    object gotoSettings: TChangeTabAction
-      Category = 'Tab'
-      Tab = Settings
-    end
-    object gotoNearBy: TChangeTabAction
-      Category = 'Tab'
-      Tab = NearBy
-    end
+    ContentType = 'text/html'
+    Left = 560
+    Top = 240
   end
   object LocationSensor1: TLocationSensor
+    Active = True
     OnLocationChanged = LocationSensor1LocationChanged
-    Left = 528
-    Top = 144
+    Left = 560
+    Top = 64
   end
-  object onLocationChanged: TTimer
-    Enabled = False
-    Interval = 200
-    OnTimer = onLocationChangedTimer
-    Left = 376
-    Top = 400
+  object ActionList1: TActionList
+    Left = 448
+    Top = 80
+    object settings: TChangeTabAction
+      Category = 'Tab'
+      Tab = TabItem1
+    end
+    object weather: TChangeTabAction
+      Category = 'Tab'
+      Tab = TabItem2
+    end
+  end
+  object Timer3: TTimer
+    Interval = 900000
+    OnTimer = Timer3Timer
+    Left = 504
+    Top = 384
   end
 end
